@@ -1,2 +1,2 @@
 # thesis-code-challenge
-# thesis-code-challenge
+Pure HTML/CSS
