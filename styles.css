@@ -1,0 +1,297 @@
+body{
+position:  relative;
+margin: 0;
+}
+
+.nav{
+position:  absolute;
+top: 0;
+left: 0;
+width: 100%;
+background: transparent;
+
+}
+
+.nav-container{
+margin: 5px 30px; 
+}
+
+.nav-wrapper{
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+}
+
+.logo{
+
+}
+
+.logo a{
+color: #fff;
+text-decoration:  none;
+}
+
+.logo a span{
+font-size: 30px;	
+color: #fff;
+}
+
+.nav-links{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav-links ul{
+padding: 0;
+margin: 0;
+}
+
+.nav-links ul li{
+display: inline-block;
+margin: 0 15px;
+}
+
+.nav-links ul li a{
+color: #fff;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration:  none;
+}	
+
+.hmaburger-icon-container{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.hmaburger-icon{
+width: 20px;
+}
+
+.hmaburger-icon span{
+display: block;
+height: 2px;
+width: 100%;
+background: #fff;
+margin-bottom: 2.5px; 
+}
+
+.hmaburger-icon span:last-of-type{
+margin-bottom: 0; 
+}
+
+
+.hero{
+background-image: url('./image.png');
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+align-items: center;
+}
+
+.hero-container{
+
+}
+
+.hero-wrapper{
+padding: 0 90px;
+}
+
+.hero-content{
+display: grid;
+grid-template-columns: 1fr 1fr; 
+}
+
+.hero-copy{
+
+}
+
+.hero-copy-wrapper{
+padding-right: 50px;
+}
+
+.hero-copy h1{
+font-size: 60px;
+color: #fff;
+margin: 0 0 15px;
+}
+
+.hero-copy p{
+color: #fff;
+margin: 0;
+font-size: 18px;
+}
+
+.hero-form{
+
+}
+
+.hero-form-wrapper{
+padding-left: 50px;
+}
+
+.hero-form-wrapper h4{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero-form-wrapper p{
+color: #777;
+text-align: center;
+}
+
+.hero-form-wrapper p a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center
+}
+
+
+.hero-form-wrapper form{
+border: 1px solid #777;
+overflow: hidden;
+border-radius: 2px;
+}
+
+.hero-form-wrapper form input{
+display: block;
+width: 100%;
+height: 35px;
+color: #fff;
+background: transparent;
+padding: 0 0 0 7.5px;
+border: none;
+border-bottom: .5px solid #ccc;
+}
+
+.hero-form-wrapper form input::placeholder { 
+color: #fff;
+}
+
+.hero-form-wrapper form input:-ms-input-placeholder { 
+color: #fff;
+}
+
+.hero-form-wrapper form input::-ms-input-placeholder { 
+color: #fff;
+}
+
+.hero-form-wrapper form button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-form-wrapper form button span{
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.footer{
+position: absolute;
+bottom: 0;
+background: transparent;
+width: 100%;
+}
+
+.footer-container{
+margin: 5px 30px;
+}
+
+.footer-wrapper{
+display: grid;
+grid-template-columns: 1fr 4fr;
+}
+
+.footer-copyright{
+color: #fff;
+}
+
+.footer-links{
+
+}
+
+.footer-links-wrapper{
+display: flex;
+justify-content: flex-end;
+}
+
+.footer-links-wrapper ul {
+
+}
+
+.footer-links-wrapper ul li {
+display: inline-block;
+padding: 0 15px;
+}
+
+.footer-links-wrapper ul li a{
+font-size: 18px;
+text-decoration: none;
+color: #fff;
+}
+
+
+@media only screen and (max-width:770px){
+    .hero-content{
+        grid-template-columns: 6fr;
+        grid-template-rows: 3fr 3fr;
+        position: absolute;
+        top: 0;
+    }
+
+    .hero-copy-wrapper{
+        margin: 30px;
+    }
+
+    .hero-form-wrapper{
+        padding-right: 50px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .hmaburger-icon-container{
+        justify-content: flex-start;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .hero-copy h1{
+        font-size: 40px;
+    }
+
+    .hero-form-wrapper{
+        padding-right: 50px;
+    }
+
+    .footer-copyright p{
+        font-size: 10px;
+    }
+
+    .footer-links-wrapper ul li a{
+        font-size: 10px;
+    }
+
+}
